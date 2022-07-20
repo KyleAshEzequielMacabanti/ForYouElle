@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Photos and Memories</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+      .bgcolor{
+        background-color: rgb(255, 223, 211);
+      }
+      .txt{
+        color: azure;
+      }
+
+      .txt:hover{
+        color: rgb(240, 174, 221);
+
+      }
+
+      .toggles{
+        color: azure;
+      }
+
+      /* cardflip */
+      .imgcontainer{
+        margin: 50px;
+      }
+     
+      /* smalls ////////////////////////////////////*/
+      .flip-card {
+      background-color: transparent;
+      width: 302px;
+      height: 305px;
+      border-radius: 25px;
+      border: 1px solid #f1f1f1;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+
+      }
+
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        border-radius: 15px;
+        background-color: #bbb;
+        color: black;
+      }
+
+      /* Style the back side */
+      .flip-card-back {
+        background-image: url("fcbg.jpg");
+        color: white;
+        transform: rotateY(180deg);
+        border-radius: 15px;
+      }
+
+      .flip-card-back>h4 {
+        margin: 25px; 
+        /* line-height: 30px; */
+      }
+
+      .brd{
+        border-radius: 15px;
+      }
+
+
+      /* gridtemplate */
+      .row1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 50px;
+      }
+
+      .row2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 50px;
+      }
+
+
+      @media only screen and (max-width: 375px) {
+      .row1{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 15px;
+      }
+
+      .row2{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 15px;
+      }
+      }
+
+      .row1>.brd{
+        margin-right: 20px;
+      }
+
+        
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bgcolor navbar-light bg-light bgcolor fixed-top">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler toggles" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon toggles"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="h5 nav-link px-5 txt" aria-current="page" href="home0145394578.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="h5 nav-link px-5 txt" href="photos.html">Photos and Memories</a>
+              </li>
+              <li class="nav-item">
+                <a class="h5 nav-link px-5 txt" href="songs.html">Songs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <br>
+    <br>
+    <div class="imgcontainer">
+
+      <!-- row1 -->
+      <div class="row1">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="cp1.jpg" class="brd" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h4>I really enjoy it kapag kumakain tayo sa glorieta and streetfoods lagi binibili natin, ang peaceful lang for me</h4> </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="c44.jpg" class="brd" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h4>Year 2019 nasa manila ka. lagi naman tayo nag cecelebrate ng pasko and new year lagi kahit vc lang most of the time.</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="cp3.jpg" class="brd" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h4>Research presentation ata dito and halatang puyat na puyat ako gagi, on the spot pa namin nirecreate product dito eh haha</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="cp4.jpg" class="brd" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h4>To be honest nung unang pag yuko ko palang lasing na talaga ako. now you know talaga na malakas loob ko uminom pero unang bumabagsak haha</h4>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+
+       <!-- row2 /////////////////////////////////////////////////////-->
+      <div class="row2">
+        
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="c21.jpg" class="brd" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h4>Cute mo lagi pag nag sesend ka ng random pictures sakin noon pa. tas bet ko pa yung mga ayaw mo eh hahahha</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="c22.jpg" class="brd" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h4>Ito yung isa sa mga pinaka una nating picture, i believe eto lang ata yung post ko sa IG ko. ang fresh pa ng mukha natin dito</h4>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="c23.jpg" class="brd" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h4>First time kong kumain ng corndog dito kasama ka, kung di mo ko sinama siguro gang ngayun di pako nakapag try</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="c24.jpg" class="brd" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h4>Sobrang nag enjoy ako nung pumunta tayo sa lakeshore, yung lights, views, foods. medyo romantic din</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- row3//////////////////////////////////////////////// -->
+      <div class="row2">
+        
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="c31.jpg"  class="brd" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h4>Pumunta ata tayong angeles dito nung nag iinqure ako for college? kfc tayo lagi kumakain eh. sarap kase nung gravy</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="c54.jpg" class="brd" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h4>Eto ba yung first picture natin or one of? sobrang crush moko dito eh pero nahihiya kapa sakin hahahah. baligtad ata</h4>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="c53.jpg" class="brd" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h4>Moving up ceremony natin dito, happy tayo dahil tapos na high school pero di natin alam paghihirap na mararanasan sa shs. parang kahapon lang pero 3rd year college na tayo agad</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="c34.jpg" class="brd" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h4>Sinamahan kita sa derma dito diba? medyo matagal din tayo naghintay and kumain pa tayo sa canteen non. kahit san naman tayo kumain basta magkasama eh</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+    
+   
+
+
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</html>
